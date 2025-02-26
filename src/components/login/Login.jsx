@@ -64,6 +64,7 @@ function Login() {
                 .catch((err) => console.log(err));
         }
     }, [user, navigate]);
+    
     useEffect(() => {
         if (user?.access_token) {
             const details = {
@@ -72,8 +73,8 @@ function Login() {
             }
             dispatch(userLoginAction(details));
         }
-    }, [dispatch, profile])
-    
+    }, [dispatch, profile,user?.access_token])
+
     useEffect(() => {
         if (userDetails?.success) {
             localStorage.setItem('token', userDetails?.token)

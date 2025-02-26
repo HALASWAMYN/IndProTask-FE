@@ -134,7 +134,7 @@ function Signup() {
             };
             dispatch(userSignUpAction(details));
         }
-    }, [dispatch, profile]);
+    }, [dispatch, profile , user?.access_token]);
 
     useEffect(() => {
         if (userDetails?.success) {
