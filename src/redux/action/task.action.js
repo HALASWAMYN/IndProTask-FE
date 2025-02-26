@@ -11,7 +11,6 @@ import {
     TASKSTATUSSUCCESS,
     TASKSTATUSFAILURE
 } from './actiontype'
-import Cookies from 'js-cookie'
 const baseUrl = process.env.REACT_APP_API_URL;
 const token = localStorage.getItem('token')
 

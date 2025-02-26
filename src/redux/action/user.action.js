@@ -7,7 +7,6 @@ import {
     USERDETAILSFAILURE
 } from './actiontype'
 import Axios from 'axios';
-import Cookies from 'js-cookie'
 const baseUrl = process.env.REACT_APP_API_URL;
 export const userSignUpAction = (details) => {
     return async (dispatch) => {

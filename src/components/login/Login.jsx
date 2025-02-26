@@ -73,13 +73,14 @@ function Login() {
             dispatch(userLoginAction(details));
         }
     }, [dispatch, profile])
+    
     useEffect(() => {
         if (userDetails?.success) {
             localStorage.setItem('token', userDetails?.token)
             navigate('/home');
         }
     }, [userDetails,navigate])
-    
+
     return (
         <div className='h-screen w-full'>
             <div className='bg-blue-600 h-[8%] flex justify-between items-center'>
