@@ -1,7 +1,6 @@
 import React from 'react'
 
 function TaskDetails({ trigger, setTrigger, selectedTask }) {
-    console.log('selected',selectedTask)
     return trigger ? (
         <div>
             <div className='w-full h-[100vh]  fixed top-0 left-0 bg-[#00000080] flex justify-center items-center'>
